@@ -50,8 +50,8 @@ SHOW_SLEEP_LOGGING = False
 # You can add multiple schedules to be run after x days of the bots life
 USE_SLEEP_SCHEDULE = False
 BOT_SCHEDULES = [
-  {"days": 0, "schedule": [((0,01),(11,59)), ((12,01),(23,59))]},
-  {"days": 4, "schedule": [((0,01),(11,59)), ((12,01),(23,59))]},
+  {"days": 0, "schedule": [((4,00),(5,00)), ((17,30),(19,30))]},
+  {"days": 4, "schedule": [((8,00),(10,00)), ((20,30),(23,20))]},
   ]
 
 if os.environ.get('PORT'):
@@ -59,9 +59,9 @@ if os.environ.get('PORT'):
   if not os.environ.get('NOSCHEDULE'):
     USE_SLEEP_SCHEDULE = True
     BOT_SCHEDULES = [
-      {"days": 0, "schedule": [((0,01),(11,59)), ((12,01),(23,59))]},
-      {"days": 4, "schedule": [((0,01),(11,59)), ((12,01),(23,59))]},
-      {"days": 12, "schedule": [((0,01),(11,59)), ((12,01),(23,59))]},
+      {"days": 0, "schedule": [((4,00),(5,00)), ((17,30),(19,30))]},
+      {"days": 4, "schedule": [((8,00),(10,00)), ((20,30),(23,20))]},
+      {"days": 12, "schedule": [((9,00),(12,30)), ((18,00),(22,00))]},
       ]
 
 SCHEDULES = []
