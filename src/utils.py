@@ -59,9 +59,10 @@ if os.environ.get('PORT'):
   if not os.environ.get('NOSCHEDULE'):
     USE_SLEEP_SCHEDULE = True
     BOT_SCHEDULES = [
-      {"days": 0, "schedule": [((4,00),(5,00)), ((17,30),(17,31))]},
-      {"days": 4, "schedule": [((8,00),(8,01)), ((20,30),(20,31))]},
-      {"days": 12, "schedule": [((9,00),(9,31)), ((18,00),(18,01))]},
+{"days": 0, "schedule": [
+((4,00),(5,00)), ((17,30),(19,30))]},
+      {"days": 4, "schedule": [((8,00),(10,00)), ((20,30),(23,20))]},
+      {"days": 12, "schedule": [((9,00),(12,30)), ((18,00),(22,00))]},
       ]
 
 SCHEDULES = []
